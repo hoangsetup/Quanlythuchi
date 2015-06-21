@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_addtaikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#556EEA7E"
+            android:paddingTop="16dp"
+            android:drawableTop="@drawable/ic_add"
+            android:text="" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_tongtien"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:divider="#00000000"
+        android:dividerHeight="12dp"
+        android:padding="12dp" >
+
+    </ListView>
+
+</RelativeLayout>

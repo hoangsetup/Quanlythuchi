@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_menulist">#FFF</color>
+    <color name="item_taikhoan_clicked">#025CE2</color>
+    <color name="item_taikhoan_normal">#4AA1E0</color>
+</resources>

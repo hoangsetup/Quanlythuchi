@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imageButton_addghichep"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#556EEA7E"
+        android:src="@drawable/ic_add" />
+
+    <ListView
+        android:id="@+id/listView_ghichep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

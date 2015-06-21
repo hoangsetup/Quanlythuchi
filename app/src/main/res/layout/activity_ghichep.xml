@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/spinner_loaighichep"
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/styleLable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Số tiền:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_sotien"
+                style="@style/styleEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:textSize="32sp"
+                android:ems="10"
+                android:inputType="number|numberDecimal|numberSigned" >
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView_donvitiente"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="đ"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hạng mục:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner_hangmuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton_addHangmuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/styleLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/Spinner_khoanquyghichep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton_addkhoanquy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_ghichughichep"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ghi chú"
+            android:lines="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/editText_ngayghichep"
+                style="@style/styleEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/date"
+                android:editable="false"
+                android:ems="10"
+                android:text="23/09/2014" />
+
+            <EditText
+                android:id="@+id/editText_gioghichep"
+                style="@style/styleEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:drawableLeft="@drawable/time"
+                android:editable="false"
+                android:ems="10"
+                android:text="11:37 CH" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button_huyghichep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:drawableLeft="@drawable/ic_cancel"
+                android:background="@android:color/holo_red_light"
+                android:text="Hủy" />
+
+            <Button
+                android:id="@+id/button_luughichep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@android:color/holo_green_light"
+                android:drawableLeft="@drawable/ic_save"
+                
+                android:text="Lưu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

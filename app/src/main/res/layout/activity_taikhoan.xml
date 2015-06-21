@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_sotien"
+            style="@style/styleLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Tên tài khoản:" />
+
+        <EditText
+            android:id="@+id/editText_tentaikhoan"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wallet"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView_ngay"
+            style="@style/styleLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Loại tài khoản:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_loaitaikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/styleLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại tiền tệ:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_loaitiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            style="@style/styleLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Số tiền ban đầu:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_sotienbandau"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sotienbandau"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal|number" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            style="@style/styleLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ghi chú:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_ghichu"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="100"
+            android:lines="2"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btn_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Hủy" />
+
+            <Button
+                android:id="@+id/btn_xong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xong" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

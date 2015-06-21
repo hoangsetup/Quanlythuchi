@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_list_taikhoan"
+    android:layout_margin="4dp"
+    android:padding="4dp" >
+
+    <TextView
+        android:id="@+id/txt_sotienconlai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="1.514.000đ"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/txt_tentaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_sotienconlai"
+        android:text="OTSC"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFF"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_tentaikhoan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/atm" />
+
+</RelativeLayout>
